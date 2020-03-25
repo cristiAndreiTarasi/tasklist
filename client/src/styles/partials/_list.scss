@@ -1,0 +1,105 @@
+$vendors: 'webkit' 'moz' 'ms' 'o';
+
+@mixin flexVendors () {
+    @each $vendor in $vendors {
+        display: -#{$vendor}-flex;
+        display: flex;
+    }
+}
+
+.App_list {
+    width: 500px;
+    padding: 0;
+    margin: 20px auto;
+    list-style: none;
+
+    &_item {
+        color: #a4acb9;
+        position: relative;
+
+        .main {
+            @include flexVendors;
+
+            justify-content: space-between;
+            padding: 10px 10px;
+            align-items: center;
+            height: auto;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+            color: #727983;
+
+            .handle-icon { margin-right: 20px; }
+
+            .task-group {
+                display: flex;
+                display: inherit;
+                width: 100%;
+                align-items: center;
+
+                input[type="checkbox"] {
+                    margin: 0px 10px 0px 0px;
+                    -webkit-appearance: none;
+                    background-color: #fafafa;
+	                  border: 1px solid #ff6f69;
+                    background-color: transparentize(#ff6f69, 0.9);
+	                  padding: 9px;
+	                  border-radius: 50%;
+                    outline: none;
+                }
+
+                input[type="checkbox"]:checked {
+                    margin: 0px 10px 0px 0px;
+                    -webkit-appearance: none;background-color: #fafafa;
+	                border: 1px solid #88d8b0;
+                    background-color: transparentize(#88d8b0, 0.9);
+                    padding: 9px;
+                    border-radius: 50%;
+                }
+
+                p.App_copy {
+                    word-wrap: break-word;
+                    padding: 0 10px;
+                }
+
+                .lineThrough {
+                    transition: all 0.5s ease-in-out;
+                    text-decoration: line-through;
+                    color: #727983;
+                    font-weight: 300;
+                }
+            }
+
+            & i {
+                cursor: pointer;
+            }
+
+            // Icons
+            .menu {
+                display: inherit;
+                justify-content: flex-end;
+                width: 100px;
+
+                .menu-item { 
+                    padding-left: 8px; 
+                    &:hover i { color: lighten(#727983, 10%); }
+                }
+            }
+        }
+
+        .status-bar {
+            padding: 5px 0 5px 20px;
+            color: #727983;
+
+            p span {
+                color: lighten(#727983, 10%);
+            }
+        }
+
+        .dark { background-color: #343a40; height: 1px; }
+        .light { background-color: #484f59; height: 1px; }
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(58,64,71,1) 50%, rgba(255,255,255,0) 100%);
+        }
+    }
+}

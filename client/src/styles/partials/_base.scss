@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    // background-color: #8f9db0;
+    background-color: #3c424a;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 800px;
+    margin: 0 auto;
+    // background-color: #3c424a;
+    border-radius: 5px;
+    border: none;
+
+    .App_copy {
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: #cccdce;
+    }
+
+    .App_heading {
+        font-size: 2.2rem;
+        padding: 10px 0;
+        // color: #727983;
+        color: lighten(cyan, 30);
+        font-weight: 300;
+        margin: 0 auto 40px auto;
+    }
+
+    .App_button_primary {
+        all: unset;
+        color: #666;
+        background-color: cornflowerblue;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: darken(cornflowerblue, 20%);
+            color: #545454;
+        }
+    }
+
+    .App_button_danger {
+        all: unset;
+        // background-color: #d6d5d4;
+        background-color: indianred;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: darken(indianred, 20%);;
+            color: #545454;
+        }
+    }
+}

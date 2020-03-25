@@ -1,0 +1,111 @@
+
+.Modal_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 404px;
+
+    .Modal_header_content {
+        .Modal_header {
+            background-color: #8f9db0;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #7a8696;
+
+            .Modal_title {
+                margin-left: 40px;
+                font-size: 1.2rem;
+                font-weight: 900;
+                color: #3c424a;
+            }
+
+            .Modal_button_close {
+                font-size: 1.5rem;
+                color: #cd5c5c;
+                padding: 0 10px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #9a4545;
+                }
+            }
+        }
+
+        .Modal_button_group {
+            display: flex;
+
+            .Modal_button_edit_tools {
+                all: unset;
+                color: #3c424a;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #E5E7E9;
+                border-right: 1px solid #c0cee2;
+                transition: all 0.3s ease-in-out;
+
+                &:hover { background-color: #c0cee2; }
+            }
+        }
+
+        .Modal_content {
+            padding: 20px;
+            color: #3c424a;
+            // font-size:
+            word-wrap: wrap-all;
+            border-top: 1px solid #ECF0F1;
+        }
+
+        [contenteditable]:focus { outline: none }
+
+
+    }
+
+    .Modal_footer {
+        background-color: darken(#c0cee2, 5%);
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Modal_button_group {
+            height: 40px;
+            width: 100px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .Modal_button {
+                all: unset;
+                padding: 5px 7px;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .save {
+                background-color: #3498DB;
+                color: lighten(#3498DB, 40%);
+
+                &:hover { background-color: darken(#3498DB, 10%); }
+            }
+
+            .edit {
+                background-color: #1ABC9C;
+                color: lighten(#1ABC9C, 40%);
+
+                &:hover { background-color: darken(#1ABC9C, 10%); }
+            }
+        }
+
+        .smile { margin-left: 20px; color: #3c424a; }
+    }
+}

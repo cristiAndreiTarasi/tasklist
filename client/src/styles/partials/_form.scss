@@ -1,0 +1,127 @@
+.App_form {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px auto;
+
+    .App_form_group {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+
+        label {
+            padding-bottom: 10px;
+        }
+    }
+
+    .App_form_login_group {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    
+    .App_input {
+        border: none;
+        width: 400px;
+        height: 40px;
+        border: 1px solid #2e3238;
+        border-radius: 2px;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        background-color: #343a40;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #ababac;
+        letter-spacing: 0.1rem;
+        // padding:  5px 10px 5px 20px;
+        padding-left: 20px;
+    }
+
+    .App_form_button {
+        all: unset;
+        font-family: 'Lato', sans-serif;
+        padding: 10px 10px;
+        margin-top: 10px;
+        border-radius: 2px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        align-self: flex-start;
+    }
+
+    .App_form_oauth_button {
+        all: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2px;
+        padding-right: 12px;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        background-color: #3b5998;
+        color: #f7f7f7;
+        cursor: pointer;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+        i {
+            width: 43px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover {
+            background-color: darken(#3b5998, 2%);
+        }
+    }
+
+    ._submit {
+        background-color: darken(#6495ed, 10%);
+        color: #f3f8ff;
+        font-weight: 300;
+        font-size: 1.1rem;
+
+        &:hover { background-color: darken(#6495ed, 15%); }
+    }
+
+    ._update {
+        background-color: darken(#88d8b0, 10%);
+        color: #f3f8ff;
+        font-weight: 300;
+        font-size: 1.1rem;
+
+        &:hover { background-color: darken(#88d8b0, 15%); }
+    }
+
+    ._error {
+        background-color: darken(#CD5C5C, 10%);
+        color: #f3f8ff;
+        font-weight: 300;
+        font-size: 1.1rem;
+
+        &:hover { background-color: darken(#CD5C5C, 15%); }
+    }
+
+    ._no_value {
+        // background-color: #727983;
+        color: #adadad;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: left;
+        padding-left: 0;
+
+        &:hover { 
+            background-color: darken(#727983, 15%); 
+            color: #e4e4e4; 
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "module": "es6",
+        "target": "es6",
+        "experimentalDecorators": true,
+        "jsx": "preserve"
+    },
+
+    "exclude": ["node_modules"]
+}

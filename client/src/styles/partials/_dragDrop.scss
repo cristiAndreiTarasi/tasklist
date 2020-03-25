@@ -1,0 +1,20 @@
+
+.dragStyles { 
+    list-style: none;
+
+    .dragHelper {
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        background-color: darken(#3c424a, 1%);
+
+         p {
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #cccdce;
+        }
+
+        .timestamp-created p,
+        .timestamp-created span {
+            font-size: 1rem;
+        }
+    } 
+}
